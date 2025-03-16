@@ -1,0 +1,60 @@
+/* CustomButton.module.css */
+.button {
+    --color: #4788f7;
+    font-family: inherit;
+    display: inline-flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 8em;
+    height: 2.6em;
+    line-height: normal; /* Reset line height */
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s, background 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: white;
+    background: var(--color); /* Solid background */
+}
+
+/* Text inside the button */
+.buttonText {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hover Effect */
+.button:hover {
+    color: rgb(255, 255, 255);
+    background: #020004;
+}
+
+/* Hover Animation */
+.button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 300%;
+    width: 300%;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: all 0.5s;
+}
+
+.button:hover:before {
+    top: -50%;
+    left: -50%;
+}
+
+.button:active {
+    background: #190153;
+    transition: background 0s;
+}
