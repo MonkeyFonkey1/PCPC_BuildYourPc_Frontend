@@ -5,6 +5,7 @@ import styles from "./HomeScreen.module.css";
 function HomeScreen() {
     return (
         <div className={styles.container}>
+            <header className={styles.header}>PCPC Build Your PC</header>
             <div className={styles.content}>
                 <h1>Build Your Dream PC</h1>
                 <p>Choose your components manually or let AI create the best build for you.</p>
