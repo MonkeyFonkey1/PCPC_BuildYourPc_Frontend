@@ -16,6 +16,9 @@ function HomeScreen() {
                     <Link to="/auto-build">
                         <CustomButton text="Automatic Build" />
                     </Link>
+                    <Link to="/session-builds">
+                        <CustomButton text="Session Builds" />
+                    </Link>
                 </div>
             </div>
         </div>
