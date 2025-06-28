@@ -1,13 +1,12 @@
-/* CustomButton.module.css */
 .button {
     --color: #4788f7;
     font-family: inherit;
-    display: inline-flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
     width: 8em;
     height: 2.6em;
-    line-height: normal; /* Reset line height */
+    line-height: normal; 
     margin: 20px;
     position: relative;
     cursor: pointer;
@@ -19,23 +18,23 @@
     border-radius: 6px;
     font-weight: 500;
     color: white;
-    background: var(--color); /* Solid background */
+    background: var(--color); 
 }
 
-/* Text inside the button */
+
 .buttonText {
     display: inline-block;
     width: 100%;
     text-align: center;
 }
 
-/* Hover Effect */
+
 .button:hover {
     color: rgb(255, 255, 255);
     background: #020004;
 }
 
-/* Hover Animation */
+
 .button:before {
     content: "";
     position: absolute;
