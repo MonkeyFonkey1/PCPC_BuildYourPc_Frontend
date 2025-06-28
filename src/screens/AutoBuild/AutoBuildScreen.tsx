@@ -96,7 +96,7 @@ function AutoBuildScreen() {
     const handleReplaceComponent = async (newComponentId: string) => {
         const sessionId = localStorage.getItem("sessionId");
     
-        console.log("Replacing component:", newComponentId); // ✅ Debugging Step 1
+        console.log("Replacing component:", newComponentId); 
     
         setLoading(true);
         setError("");
@@ -113,12 +113,12 @@ function AutoBuildScreen() {
                 { withCredentials: true }
             );
     
-            console.log("API Response:", response.data); // ✅ Debugging Step 2
+            console.log("API Response:", response.data); 
     
             if (response.data.build) {
-                setBuild({ ...response.data.build });  // ✅ Ensure state updates
+                setBuild({ ...response.data.build });  
                 console.log("Updated Build in State:", response.data.build);
-                setEditingComponentType(null); // Close selection modal
+                setEditingComponentType(null); 
             }
         } catch (err) {
             console.error("Error replacing component:", err);
